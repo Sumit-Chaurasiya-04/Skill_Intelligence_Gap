@@ -1,0 +1,5 @@
+Bob Lee
+Email: bob.lee@example.com
+Experience: 4 years as Frontend Developer
+Skills: HTML, CSS, JavaScript, React, Redux
+Education: B.Sc. in Software Engineering

@@ -1,0 +1,5 @@
+Alice Johnson
+Email: alice.johnson@example.com
+Experience: 2 years as NLP Engineer
+Skills: Python, NLP, SpaCy, PyTorch, Transformers
+Education: M.Sc. in AI

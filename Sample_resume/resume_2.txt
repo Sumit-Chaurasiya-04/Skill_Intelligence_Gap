@@ -1,0 +1,5 @@
+Jane Smith
+Email: jane.smith@example.com
+Experience: 5 years as Software Engineer
+Skills: Java, Spring Boot, REST APIs, Docker, Kubernetes
+Education: B.Tech in Computer Engineering

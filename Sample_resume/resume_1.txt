@@ -1,0 +1,5 @@
+John Doe
+Email: john.doe@example.com
+Experience: 3 years as Data Analyst
+Skills: Python, SQL, Excel, Tableau, Machine Learning
+Education: B.Sc. in Computer Science
