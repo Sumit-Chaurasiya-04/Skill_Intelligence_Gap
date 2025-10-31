@@ -1,0 +1,25 @@
+Virtual Environment
+
+venv/
+.venv/
+env/
+
+Python artifacts
+
+pycache/
+*.pyc
+*.pyo
+
+IDE/Editor files
+
+.vscode/
+.idea/
+
+Streamlit/App cache and temporary files
+
+.streamlit/
+
+Database and data output files
+
+data/skills.db
+data/jobs_db.json
