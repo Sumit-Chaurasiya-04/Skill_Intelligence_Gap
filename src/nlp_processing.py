@@ -68,5 +68,5 @@ def summarize_text(text: str, max_length: int = 180):
     # Use CountVectorizer style for more robust weighting (simulated with Counter)
     keywords = [w for w, _ in Counter(words).most_common(5)]
     
-    summary += f"\n\n🔑 Key Terms: {', '.join(keywords)}"
+    summary += f"\n\nKey Terms: {', '.join(keywords)}"
     return summary
