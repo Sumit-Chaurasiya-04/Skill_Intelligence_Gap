@@ -37,7 +37,7 @@ if 'last_text' not in st.session_state:
 # App UI Configuration
 # -------------------------------
 st.set_page_config(page_title="Skill Gap Intelligence Engine", layout="wide", initial_sidebar_state="expanded")
-st.title("🧠 Skill Gap Intelligence Engine (Pro Bono)")
+st.title("Skill Gap Intelligence Engine (Pro Bono)")
 
 st.sidebar.header("Navigation")
 page = st.sidebar.radio("Go to", ["Skill Analysis", "Job Trend Tracker", "Analysis History"])
@@ -46,9 +46,9 @@ page = st.sidebar.radio("Go to", ["Skill Analysis", "Job Trend Tracker", "Analys
 # PAGE: Skill Analysis
 # -------------------------------
 if page == "Skill Analysis":
-    st.header("🎯 Analyze Your Profile")
+    st.header("Analyze Your Profile")
 
-    with st.expander("📝 Paste Profile or Document Text Here"):
+    with st.expander("Paste Profile or Document Text Here"):
         input_text = st.text_area(
             "Copy & Paste Resume, Job Description, or Learning Goals:",
             value=st.session_state.last_text,
@@ -93,15 +93,15 @@ if page == "Skill Analysis":
             with col1:
                 st.markdown("##### Extracted Core Skills (Your Assets)")
                 if extracted_skills:
-                    st.success(f"✅ {len(extracted_skills)} Skills Identified.")
+                    st.success(f"{len(extracted_skills)} Skills Identified.")
                     st.markdown(f"**{', '.join(extracted_skills)}**")
                 else:
-                    st.info("🔎 No recognizable skills detected against the taxonomy.")
+                    st.info("No recognizable skills detected against the taxonomy.")
                     
             with col2:
                 st.markdown("##### Recommended Skill Gaps (Next Steps)")
                 if unique_recs:
-                    st.warning(f"💡 {len(unique_recs)} Growth Areas Suggested.")
+                    st.warning(f"{len(unique_recs)} Growth Areas Suggested.")
                     st.markdown(f"**{', '.join(unique_recs)}**")
                 else:
                     st.success("You seem to have a comprehensive skill set!")
@@ -116,7 +116,7 @@ if page == "Skill Analysis":
 # PAGE: Job Trend Tracker
 # -------------------------------
 elif page == "Job Trend Tracker":
-    st.header("📈 Job Market Trend & Scraper")
+    st.header("Job Market Trend & Scraper")
 
     # ----- Job Scraper -----
     st.subheader("Live Job Scraper (Simulated)")
@@ -132,9 +132,9 @@ elif page == "Job Trend Tracker":
             jobs_df = data_pipeline.scrape_jobs(keyword, pages)
             
         if jobs_df.empty:
-            st.error("❌ No jobs found or simulated fetch failed. Try a different keyword.")
+            st.error("No jobs found or simulated fetch failed. Try a different keyword.")
         else:
-            st.success(f"🎉 Successfully fetched and analyzed {len(jobs_df)} simulated job postings.")
+            st.success(f"Successfully fetched and analyzed {len(jobs_df)} simulated job postings.")
             
     # ----- Previously Scraped Jobs -----
     st.markdown("---")
@@ -174,7 +174,7 @@ elif page == "Job Trend Tracker":
 # PAGE: Analysis History (New Feature)
 # -------------------------------
 elif page == "Analysis History":
-    st.header("📑 Analysis History")
+    st.header("Analysis History")
     
     history_df = database.load_history()
     
