@@ -1,13 +1,13 @@
-🧠 Skill Gap Intelligence Engine (FOSS)
+Skill Gap Intelligence Engine (FOSS)
 
 A professional, Python-based application for data-driven career planning. This engine identifies skill gaps, analyzes job market dynamics, and provides actionable, personalized recommendations using only Free and Open-Source Software (FOSS) tools.
 
-✨ Core Functionality
+Core Functionality
 
 This application showcases a full-stack, data-driven system built on lightweight, performant modules.
 
 
-🏗️ Project Architecture
+Project Architecture
 
 The project follows a modular, package-based Python structure to ensure separation of concerns (SoC), portability, and testability.
 
@@ -29,7 +29,7 @@ Dependency Management: Strict use of a single requirements.txt.
 
 Error Handling: Robust path resolution (src/utils.py) and database connection management (src/database.py).
 
-⚙️ Local Setup and Deployment
+Local Setup and Deployment
 
 Prerequisites
 
@@ -76,7 +76,7 @@ Set the Main file path to: app/main_app.py.
 
 Click Deploy!
 
-👨‍💻 Contributing
+Contributing
 
 This project is licensed under the MIT License. Contributions, suggestions, and bug reports are welcome! Please open an issue or submit a pull request for any improvements, especially to the recommendation logic or data pipeline simulation.
 
